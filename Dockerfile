@@ -21,5 +21,7 @@ ENV HUGO_BASE_URL http://localhost
 ENV HUGO_PORT 1313
 ENV HUGO_BIND 0.0.0.0
 
+WORKDIR /data
+
 # Serve site
 CMD hugo -b ${HUGO_BASE_URL} --port ${HUGO_PORT} --bind ${HUGO_BIND}
