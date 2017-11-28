@@ -24,4 +24,4 @@ ENV HUGO_BIND 0.0.0.0
 WORKDIR /data
 
 # Serve site
-CMD hugo -b ${HUGO_BASE_URL} --port ${HUGO_PORT} --bind ${HUGO_BIND}
+CMD hugo server -b ${HUGO_BASE_URL} --port ${HUGO_PORT} --bind ${HUGO_BIND}
